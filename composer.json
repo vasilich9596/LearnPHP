@@ -1,0 +1,19 @@
+{
+	"name": "name/name",
+	"type": "project",
+	"description": "test.",
+	"keywords": [
+		"test"
+	],
+	"license": "MIT",
+	"config": {
+		"optimize-autoloader": true,
+		"preferred-install": "dist",
+		"soft-packages": true
+	},
+	"autoload": {
+		"psr-4":{
+			"App\\": "App/"
+		}
+	}
+}
