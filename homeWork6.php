@@ -9,7 +9,7 @@ $type = '<ul>';
 		foreach ($array as $value) {
 			$result .='<li>'.$value.'</li>';
 		}
-		$result .= '</ul>';
+		$result .= $type;
 		return $result;
 	}
 	print_r(nameF($array,$title,$type));
