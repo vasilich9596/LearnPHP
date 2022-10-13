@@ -25,10 +25,23 @@ print_r('сума всіх елементів масиву - '. $arrSum);
 echo"<br>";
 print_r('среднее арифметическое всех элементов массива   - '. $arrSum / count($array) );
 echo"<br>";
-print_r('мінімальний елемент массиву - ' . min($array) );
+
+$val = [];
+sort($array);
+foreach ($array as $value){
+    $val[] = $value;
+}
+print_r(array_slice($val,0,5));
 echo"<br>";
-print_r('максимальний элемент массива - '. max($array) );
+
+$val = [];
+rsort($array);
+foreach ($array as $value){
+    $val[] = $value;
+}
+print_r(array_slice($val,0,5));
 echo"<br>";
+
 sort($array);
 foreach ($array as $value){
     echo "сртуваня по зростанню.$value. <br>";
