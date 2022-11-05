@@ -18,6 +18,7 @@
         <h2>Title: <?= $product['title'] ?></h2>
         <h4>Price: <?= $product['price'] ?></h4>
         <p>Description: <?= $product['description'] ?></p>
+    <button><a href="index.php"> go back</button>
 
     </body>
 </html>
