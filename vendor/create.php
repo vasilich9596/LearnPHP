@@ -1,10 +1,10 @@
 <?php
 require_once '../config/connect.php';
 
-$title = $_POST['title'];
-$description = $_POST['description'];
-$price = $_POST['price'];
+$name = $_POST['first_name'];
+$email = $_POST['email'];
+$password = $_POST['password'];
 
-mysqli_query($connect,"INSERT INTO `products` (`id`, `title`, `price`, `description`) VALUES (NULL, '$title', '$price', '$description')");
+mysqli_query($connect,"INSERT INTO `register` (`id`, `name`, `email`, `password`) VALUES (NULL, '$name', '$email', '$password')");
 
 header('Location: /');
